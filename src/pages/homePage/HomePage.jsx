@@ -1,6 +1,6 @@
 import React from "react";
 import "./homePage.scss";
-import { Navbar, Header, About, OurServices, Barbers } from "../../components";
+import { Navbar, Header, About, OurServices, Barbers, Account } from "../../components";
 
 const HomePage = () => {
   return (
@@ -10,6 +10,7 @@ const HomePage = () => {
       <About />
       <OurServices />
       <Barbers />
+      <Account />
     </div>
   );
 };
