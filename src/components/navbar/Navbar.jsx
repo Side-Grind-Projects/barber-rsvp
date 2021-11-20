@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { RiMenu3Line, RiCloseLine } from "react-icons/ri";
 import logo from "../../assets/Logo.png";
+import { Link } from "react-router-dom";
 
 import "./navbar.scss";
 
@@ -26,17 +27,18 @@ const Navbar = () => {
 
   return (
     <div className="barber-rsvp__navbar">
-      <div className="barber-rsvp__navbar-links">
+      <Link to="/">
         <div className="barber-rsvp__navbar-links_logo">
           <img src={logo} alt="logo" />
         </div>
+      </Link>
+      <div className="barber-rsvp__navbar-links">
         <div className="barber-rsvp__navbar-links_container">
           <Menu />
         </div>
       </div>
       <div className="barber-rsvp__navbar-sign">
-        <p>Sign in</p>
-        <button type="button">Sign up</button>
+        <p>Login/Sign up</p>
       </div>
       <div className="gpt3__navbar-menu">
         {toggleMenu ? (
@@ -53,10 +55,10 @@ const Navbar = () => {
           />
         )}
         {toggleMenu && (
-          <div className="gpt3__navbar-menu_container scale-up-center">
-            <div className="gpt3__navbar-menu_container-links">
+          <div className="barber-rsvp__navbar-menu_container scale-up-center">
+            <div className="barber-rsvp__navbar-menu_container-links">
               <Menu />
-              <div className="gpt3__navbar-menu_container-links-sign">
+              <div className="barber-rsvp__navbar-menu_container-links-sign">
                 <p>Sign in</p>
                 <button type="button">Sign up</button>
               </div>

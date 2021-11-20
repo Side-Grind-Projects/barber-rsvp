@@ -1,20 +1,32 @@
 import React from "react";
-import HomePage from "./pages/homePage/HomePage";
-import { AuthModal } from "./components";
+import { HomePage, AccountPage, AppointmentPage } from "./pages";
+import {
+  About,
+  AuthModal,
+  Barbers,
+  Header,
+  Navbar,
+  OurServices,
+} from "./components";
 
-// import {
-//     BrowserRouter as Router,
-//     Switch,
-//     Route,
-//     Link
-// } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 const App = () => {
   return (
-    <>
-      <HomePage />
-      <AuthModal />
-    </>
+    <Router>
+      <Navbar />
+      <Routes>
+        <Route path="/" element={<HomePage />} />
+        <Route path="/" element={<About />} />
+        <Route path="/" element={<Barbers />} />
+        <Route path="/" element={<Header />} />
+        <Route path="/" element={<OurServices />} />
+        <Route path="/account" element={<AccountPage />} />
+        <Route path="/appointment/:id" element={<AppointmentPage />} />
+      </Routes>
+      {/* <HomePage /> */}
+      {/* <AuthModal /> */}
+    </Router>
   );
 };
 

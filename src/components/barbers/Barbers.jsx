@@ -3,7 +3,7 @@ import "./barbers.scss";
 
 const Barbers = () => {
   return (
-    <div>
+    <div id="barbers">
       <h1>Barbers</h1>
     </div>
   );
