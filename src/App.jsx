@@ -1,20 +1,12 @@
 import React from "react";
 import { HomePage, AccountPage, AppointmentPage } from "./pages";
-import {
-  About,
-  AuthModal,
-  Barbers,
-  Header,
-  Navbar,
-  OurServices,
-} from "./components";
+import { About, AuthModal, Barbers, Header, OurServices } from "./components";
 
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 const App = () => {
   return (
     <Router>
-      <Navbar />
       <Routes>
         <Route path="/" element={<HomePage />} />
         <Route path="/" element={<About />} />

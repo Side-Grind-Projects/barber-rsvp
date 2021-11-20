@@ -1,11 +1,13 @@
 import React from "react";
 import "./header.scss";
+import { Navbar } from "../../components";
 
 const Header = () => {
   return (
-    <div id="header">
+    <>
+      <Navbar />
       <h1>Header</h1>
-    </div>
+    </>
   );
 };
 

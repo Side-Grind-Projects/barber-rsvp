@@ -19,6 +19,7 @@ const Menu = () => (
     <p>
       <a href="#barbers">Barbers</a>
     </p>
+    <p>Login/Sign up</p>
   </>
 );
 
@@ -36,9 +37,6 @@ const Navbar = () => {
         <div className="barber-rsvp__navbar-links_container">
           <Menu />
         </div>
-      </div>
-      <div className="barber-rsvp__navbar-sign">
-        <p>Login/Sign up</p>
       </div>
       <div className="gpt3__navbar-menu">
         {toggleMenu ? (
@@ -58,10 +56,6 @@ const Navbar = () => {
           <div className="barber-rsvp__navbar-menu_container scale-up-center">
             <div className="barber-rsvp__navbar-menu_container-links">
               <Menu />
-              <div className="barber-rsvp__navbar-menu_container-links-sign">
-                <p>Sign in</p>
-                <button type="button">Sign up</button>
-              </div>
             </div>
           </div>
         )}
