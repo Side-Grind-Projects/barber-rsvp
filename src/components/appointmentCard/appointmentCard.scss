@@ -1,0 +1,30 @@
+.barber-rsvp__appointment-page_appointment-card {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.5rem 2rem;
+  border-top: 1px solid black;
+}
+
+.barber-rsvp__appointment-page_appointment-card h3 {
+  margin: 0;
+  margin-left: 10px;
+}
+
+.barber-rsvp__appointment-page_appointment-card button {
+  height: 50px;
+  background-color: var(--color-primary);
+  border: none;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.barber-rsvp__appointment-page_appointment-card button:hover {
+  background-color: var(--color-bg);
+  color: lightgray;
+}
+
+.barber-rsvp__appointment-page_appointment-card_time-div {
+  display: flex;
+  align-items: center;
+}
