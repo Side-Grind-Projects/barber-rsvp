@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import "./appointmentPage.scss";
-import { MyCalendar, Navbar } from "../../components/";
+import { Calendar, MyCalendar, Navbar } from "../../components/";
 import AppointmentSlotList from "../../components/appointmentSlotList/AppointmentSlotList";
 
 const AppointmentPage = () => {
@@ -21,8 +21,12 @@ const AppointmentPage = () => {
           <option value="Nathan Burner">Nathan Burner</option>
         </select>
       </div>
-      <MyCalendar setDateSelected={setDateSelected} />
-      {true && <AppointmentSlotList />}
+      {/* <MyCalendar setDateSelected={setDateSelected} /> */}
+      <div>
+        <h1 style={{ textAlign: "center" }}>New Calendar</h1>
+      </div>
+      <Calendar />
+      {/* {true && <AppointmentSlotList />} */}
     </div>
   );
 };

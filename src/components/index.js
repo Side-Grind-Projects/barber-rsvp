@@ -6,3 +6,4 @@ export { default as OurServices } from "./ourServices/OurServices";
 export { default as Navbar } from "./navbar/Navbar";
 export { default as AppointmentCard } from "./appointmentCard/AppointmentCard";
 export { default as MyCalendar } from "./myCalendar/MyCalendar";
+export { default as Calendar } from "./myCalendar/Calendar";

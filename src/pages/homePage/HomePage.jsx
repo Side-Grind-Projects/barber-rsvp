@@ -1,14 +1,21 @@
 import React from "react";
 import "./homePage.scss";
-import { Header, About, OurServices, Barbers } from "../../components";
+import {
+  Header,
+  About,
+  OurServices,
+  Barbers,
+  Calendar,
+} from "../../components";
 
 const HomePage = () => {
   return (
     <>
-      <Header />
+      <Calendar />
+      {/* <Header />
       <About />
       <OurServices />
-      <Barbers />
+      <Barbers /> */}
     </>
   );
 };

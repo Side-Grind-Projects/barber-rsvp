@@ -52,6 +52,19 @@
   pointer-events: none;
 }
 
+.selected a {
+  height: 50px;
+  width: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: gold;
+  border-radius: 50px;
+}
+
+.rbc-date-cell > a .selected {
+}
+
 .rbc-now > a {
   background-color: none !important;
   font-size: 32px;
@@ -72,7 +85,4 @@
 .rbc-day-bg {
   border-right: 2px solid black;
   cursor: pointer;
-}
-
-.rbc-today {
 }
